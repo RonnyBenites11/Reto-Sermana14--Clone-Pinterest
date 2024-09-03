@@ -1,0 +1,170 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-container {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+}
+
+
+.pin {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    background-color: rgba(10, 9, 9, 0.952);
+}
+
+.pin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+    transition: opacity 0.3s ease; 
+}
+
+.pin:hover img {
+    opacity: 0.4; 
+    
+}
+
+
+.pin_overlay {
+    position: absolute;
+    bottom: 50px;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.pin:hover .pin_overlay,
+.pin:hover .botones {
+    opacity: 1; 
+}
+
+
+.save_button{
+    background-color: #b60000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 25px 15px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    height: 20px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    
+}
+.share_button{
+    color: white;
+    border: none;
+    font-weight: bold;
+    background-color: none;
+}
+.save_button:hover,
+.share_button:hover {
+    background-color: darkred; 
+}
+
+.puntos{
+    background-color: #a1a1a1d8;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    width: -5px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.pin:hover .botones {
+    opacity: 1;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.botones{
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease;  } 
