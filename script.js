@@ -49,7 +49,7 @@ function mostrarImagenes(imagenes) {
 
         const compartir_button = document.createElement('button');
         compartir_button.className = 'puntos';
-        compartir_button.innerHTML = '<img src="/img/icons8-compartir-redondeado-30.png" alt="Compartir">'; 
+        compartir_button.innerHTML = '<img src="./img/icons8-compartir-redondeado-30.png" alt="Compartir">'; 
 
         botones.appendChild(puntos_button);
         botones.appendChild(compartir_button);
